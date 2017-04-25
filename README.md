@@ -1,6 +1,6 @@
 # npmtest-datapumps
 
-#### test coverage for  [datapumps (v0.5.0)](https://github.com/agmen-hu/node-datapumps)  [![npm package](https://img.shields.io/npm/v/npmtest-datapumps.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-datapumps) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-datapumps.svg)](https://travis-ci.org/npmtest/node-npmtest-datapumps)
+#### basic test coverage for  [datapumps (v0.5.1)](https://github.com/agmen-hu/node-datapumps)  [![npm package](https://img.shields.io/npm/v/npmtest-datapumps.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-datapumps) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-datapumps.svg)](https://travis-ci.org/npmtest/node-npmtest-datapumps)
 
 #### Node.js ETL (Extract, Transform, Load) toolkit for easy data import, export or transfer between systems.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-datapumps/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-datapumps/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-datapumps/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-datapumps/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-datapumps/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-datapumps/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-datapumps/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-datapumps/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-datapumps/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-datapumps/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-datapumps/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-datapumps/build/coverage.html/index.html)
 
@@ -65,10 +65,10 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "f4efdaeb22a03077260abc91bdcce2a4a269231a",
-        "tarball": "https://registry.npmjs.org/datapumps/-/datapumps-0.5.0.tgz"
+        "shasum": "e84c26c6bb405c08659bafc9adb2336c8e8d9e94",
+        "tarball": "https://registry.npmjs.org/datapumps/-/datapumps-0.5.1.tgz"
     },
-    "gitHead": "a28bd1909bac044f8f87266646c3401216be7562",
+    "gitHead": "6ddb28f6767dac3295cf353b9330c138d5f8e310",
     "homepage": "https://github.com/agmen-hu/node-datapumps",
     "keywords": [
         "etl",
@@ -101,7 +101,8 @@
         "prepublish": "coffee --no-header -o lib -c src",
         "test": "mocha --compilers coffee:coffee-script/register src/spec src/mixin/spec"
     },
-    "version": "0.5.0"
+    "version": "0.5.1",
+    "bin": {}
 }
 ```
 
