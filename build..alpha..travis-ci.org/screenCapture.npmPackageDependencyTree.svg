@@ -4,7 +4,7 @@
 <tspan x="10" y="26">21 megabytes installed</tspan>
 <tspan x="10" y="42"></tspan>
 <tspan x="10" y="58">node_modules</tspan>
-<tspan x="10" y="74">└─┬ datapumps@0.5.0 </tspan>
+<tspan x="10" y="74">└─┬ datapumps@0.5.1 </tspan>
 <tspan x="10" y="90">  ├── bluebird@2.11.0 </tspan>
 <tspan x="10" y="106">  ├── coffee-script@1.12.5 </tspan>
 <tspan x="10" y="122">  ├─┬ excel4node@0.0.10 </tspan>

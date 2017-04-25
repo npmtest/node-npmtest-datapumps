@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-datapumps/node_modules/datapumps/lib/mixin/CsvWriterMixin.js</title>
+    <title>Code coverage report for node-npmtest-datapumps/node_modules/datapumps/lib/mixin/PostgresqlMixin.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-datapumps">npmtest-datapumps (v0.0.2)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-datapumps/node_modules/datapumps/lib/mixin/CsvWriterMixin.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-datapumps/node_modules/datapumps/lib/mixin/PostgresqlMixin.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">36.84% <small>(7 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">16.67% <small>(4 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">20% <small>(1 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">16.67% <small>(1 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">36.84% <small>(7 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">16.67% <small>(4 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-datapumps/node_modules/datapumps/lib/mixin/</a> &#187; CsvWriterMixin.js</div>
+    <div class="path"><a href="../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-datapumps/node_modules/datapumps/lib/mixin/</a> &#187; PostgresqlMixin.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -249,14 +249,14 @@
 33
 34
 35
-36</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+36
+37
+38
+39
+40
+41</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -265,17 +265,27 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -285,37 +295,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function() {
-  var CsvWriterMixin, Promise, csv, fs;
+  var postgresqlMixin,
+    __slice = [].slice;
 &nbsp;
-  csv = require('fast-csv');
-&nbsp;
-  fs = require('fs');
-&nbsp;
-  Promise = require('bluebird');
-&nbsp;
-  CsvWriterMixin = <span class="fstat-no" title="function not covered" >function(options) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!(options != null ? options.path : void 0)) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('path option is required.');</span>
+  postgresqlMixin = <span class="fstat-no" title="function not covered" >function(client) {</span>
+<span class="cstat-no" title="statement not covered" >    if ((client == null) || typeof (client != null ? client.query : void 0) !== 'function') {</span>
+<span class="cstat-no" title="statement not covered" >      throw new Error('Postgresql mixin requires client to be given');</span>
     }
 <span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >function(target) {</span></span>
-<span class="cstat-no" title="statement not covered" >      target.writeRow = <span class="fstat-no" title="function not covered" >function(row) {</span></span>
-<span class="cstat-no" title="statement not covered" >        return target._csv.writer.writeAsync(row);</span>
+<span class="cstat-no" title="statement not covered" >      target.query = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var args, query;</span>
+<span class="cstat-no" title="statement not covered" >        query = arguments[0], args = 2 &lt;= arguments.length ? __slice.call(arguments, 1) : [];</span>
+<span class="cstat-no" title="statement not covered" >        if (args != null) {</span>
+<span class="cstat-no" title="statement not covered" >          return client.query(query, args);</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          return client.query(query);</span>
+        }
       };
-<span class="cstat-no" title="statement not covered" >      target._csv = options;</span>
-<span class="cstat-no" title="statement not covered" >      target._csv.writer = Promise.promisifyAll(csv.createWriteStream());</span>
-<span class="cstat-no" title="statement not covered" >      target._csv.writer.pipe(fs.createWriteStream(target._csv.path, {</span>
-        encoding: 'utf8'
-      }));
-<span class="cstat-no" title="statement not covered" >      if (target._csv.headers != null) {</span>
-<span class="cstat-no" title="statement not covered" >        target.writeRow(target._csv.headers);</span>
-      }
-<span class="cstat-no" title="statement not covered" >      return target.on('end', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >        return target._csv.writer.write(null);</span>
-      });
+<span class="cstat-no" title="statement not covered" >      return target.selectOne = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var args, query;</span>
+<span class="cstat-no" title="statement not covered" >        query = arguments[0], args = 2 &lt;= arguments.length ? __slice.call(arguments, 1) : [];</span>
+<span class="cstat-no" title="statement not covered" >        return target.query(query, args).then(<span class="fstat-no" title="function not covered" >function(_arg) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var fields, results;</span>
+<span class="cstat-no" title="statement not covered" >          results = _arg[0], fields = _arg[1];</span>
+<span class="cstat-no" title="statement not covered" >          if (results.length === 1) {</span>
+<span class="cstat-no" title="statement not covered" >            return results[0];</span>
+          } else <span class="cstat-no" title="statement not covered" >if (results.length === 0) {</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error('Query returned no result');</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            throw new Error('Query returned more than one result');</span>
+          }
+        });
+      };
     };
   };
 &nbsp;
-  module.exports = CsvWriterMixin;
+  module.exports = postgresqlMixin;
 &nbsp;
 }).call(this);
 &nbsp;
@@ -323,7 +338,7 @@
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:48:57 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 21:40:05 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
